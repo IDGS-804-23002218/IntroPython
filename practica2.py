@@ -11,36 +11,38 @@ def menu():
     opcion = int(input("Elige una opcion: "))
     if opcion == 1:
         suma()
-    if opcion == 2:
+    elif opcion == 2:
         resta()
-    if opcion == 3:
+    elif opcion == 3:
         multiplicacion()
-    if opcion == 4:
+    elif opcion == 4:
         division()
+    else:
+        print("Opcion no valida")
 
 def suma():
     num1 = int(input("Dame el primer numero: "))
     num2 = int(input("Dame el segundo numero: "))
     resultado = num1 + num2
-    print(resultado)
+    print("El resultado de la suma es:", resultado)
     
 def resta():
     num1 = int(input("Dame el primer numero: "))
     num2 = int(input("Dame el segundo numero: "))
     resultado = num1 - num2
-    print(resultado)
+    print("El resultado de la resta es:", resultado)
     
 def multiplicacion():
     num1 = int(input("Dame el primer numero: "))
     num2 = int(input("Dame el segundo numero: "))
     resultado = num1 * num2
-    print(resultado)
+    print("El resultado de la multiplicacion es:", resultado)
     
 def division():
     num1 = int(input("Dame el primer numero: "))
     num2 = int(input("Dame el segundo numero: "))
     resultado = num1 / num2
-    print(resultado)
+    print("El resultado de la division es:", resultado)
     
 def main():
     menu()

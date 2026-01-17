@@ -7,6 +7,13 @@ a = 3
 b = 4
 resultado = 0
 tem = ''
-while a < b:
-    tem = str(a) + "+"
-    
+x = 0
+
+while x < b:
+    tem += str(a) + '+'
+    resultado += a
+    x += 1
+
+tem = tem[:-1]
+
+print(tem, "=", resultado)
